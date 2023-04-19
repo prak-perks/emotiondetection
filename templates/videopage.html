@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Facial Emotion Recognition</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{url_for('static',filename='assets/css/main.css')}}" />
+		<noscript><link rel="stylesheet" href="{{url_for('static',filename='assets/css/noscript.css')}}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="https://static.thenounproject.com/png/1954199-200.png" alt="" /></span>
+						<h1>Facial  Emotion Recognition </h1>
+					</header>
+                
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="/" >Image Prediction</a></li>
+						<li><a href="videopage" class="active" >Video Prediction</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Video Emotion Prediction</h2>
+										</header>
+										<div class="video" style="text-align:center;">
+											<img src="{{ url_for('video_feed') }}">
+										</div>
+								</div>
+							</section>
+					</div>
+
+					  
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{url_for('static',filename='assets/js/jquery.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/jquery.scrollex.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/jquery.scrolly.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/browser.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/breakpoints.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/util.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+			<script>
+				document.getElementById('btn1').addEventListener('click', function(){
+				  document.getElementById('photo').innerHTML = '<img src="'+ document.getElementById('image_url').value +'" alt="Image" width="304" height="228"/>';
+				})
+			</script>
+
+	</body>
+</html>
