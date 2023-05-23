@@ -1,0 +1,6 @@
+# Face Expression Recognition Machine Learning Model
+![image](https://github.com/prak-perks/emotiondetection/assets/117466688/b997e5f8-6ede-4b10-b3dd-d73fba3ae5f4)
+
+Facial expression emotion recognition is a valuable indicator of a person's mental state, providing a plethora of emotional information and serving as an important element in interpersonal communication. Its applications span diverse fields, including psychology and marketing. Our (ML) application aims to tackle the challenge of accurately identifying emotions from facial expressions. 
+
+Tracking the emotions of users has the potential to completely revolutionize marketing strategies by enabling the analysis of user's emotional responses to different marketing campaigns. By tracking facial expressions, firms can successfully identify the campaigns and ads that are resonating with their target audience and refine their overall marketing strategies accordingly. Personalizing content based on the emotional response of users can enhance their experience and increase the likelihood of desired actions being taken, such as making a purchase. Additionally, ad targeting can be improved by showing users ads related to content that they have expressed positive emotions towards, thereby increasing the effectiveness of campaigns and reducing ad fatigue.
