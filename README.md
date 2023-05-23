@@ -9,12 +9,13 @@ Tracking the emotions of users has the potential to completely revolutionize mar
 ## System Design
 ![systemdesign](https://github.com/prak-perks/emotiondetection/assets/117466688/dfc68d33-17e4-4574-9469-83b1f706c124)
 
-Step 1: User input - Users can input an image URL by copying and pasting it on the website. 
+**Step 1**: 
+User input - Users can input an image URL by copying and pasting it on the website. 
 
-Step 2: Backend - The backend receives the input image and performs the following tasks: 
+**Step 2**: 
+- Backend - The backend receives the input image and performs the following tasks: 
+- Decode the image to grayscale to simplify the input for the CNN model 
+- Apply the pre-trained CNN model to the image to recognize the emotion. The results are then passed to the Flask API 
 
-Decode the image to grayscale to simplify the input for the CNN model 
-
-Apply the pre-trained CNN model to the image to recognize the emotion. The results are then passed to the Flask API 
-
-Step 3: Frontend - The Flask API sends the predicted emotion back to the website, where it is displayed to the user. This system design uses a pre-trained CNN model to recognize emotions based on grayscale images. Users can input their images via a website, which then sends the input to the backend. The backend processes the image and sends the predicted emotion back to the frontend, which displays it on the website.
+**Step 3**:
+Frontend - The Flask API sends the predicted emotion back to the website, where it is displayed to the user. This system design uses a pre-trained CNN model to recognize emotions based on grayscale images. Users can input their images via a website, which then sends the input to the backend. The backend processes the image and sends the predicted emotion back to the frontend, which displays it on the website.
